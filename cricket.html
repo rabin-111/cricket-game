@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>cricketGame</title>
+  <style>
+    body
+    {
+      text-align: center;
+    }
+    button
+    {
+      color: white;
+background-color: black;
+border-radius: 30px;
+border-width: 10px;
+width: 100px;
+margin-left: 100px;
+ 
+    }
+  </style>
+  
+   
+</head>
+<body>
+  
+  <h1  onclick="console.log('you have choosen title')">
+    Bat Ball Stump Game
+  </h1>
+  <button onclick="console.log('you have choosen bat'); 
+   generate();
+    if(computerChoice==='bat')
+    {
+      console.log('tie');
+
+    }
+    else if(computerChoice==='ball')
+    {
+      console.log('u won');
+
+    }
+    else
+    {
+      console.log('computer won')
+    }
+    ";> 
+    BAT
+  </button >
+  <button  onclick="console.log('you have choosen ball');
+  generate();
+    if(computerChoice==='bat')
+    {
+      console.log('computer won');
+
+    }
+    else if(computerChoice==='ball')
+    {
+      console.log('tie');
+
+    }
+    else
+    {
+      console.log('u won')
+    }
+    
+    
+    ";>
+    BALL
+  </button>
+  <button  onclick="console.log('you have choosen stump');
+   generate();
+    
+    if(computerChoice==='bat')
+    {
+      console.log('u won');
+
+    }
+    else if(computerChoice==='ball')
+    {
+      console.log('computer won');
+
+    }
+    else
+    {
+      console.log('tie')
+    }
+    
+    ";>
+    STUMP
+  </button>
+ <script>
+  
+  let computerChoice;
+  function generate()
+  {
+  let randomNumber =Math.random()*3;
+   
+   if(randomNumber>0 && randomNumber<=1)
+   {
+     computerChoice='bat';
+     console.log('computer bat');
+   }
+   else if (randomNumber>1 && randomNumber<=2)
+   { 
+
+      computerChoice='ball';
+     console.log('computer ball');
+   }
+   else 
+   {
+    computerChoice ='stump';
+     console.log('computer stump');
+
+   }
+  }
+
+ </script>
+</body>
+</html>
